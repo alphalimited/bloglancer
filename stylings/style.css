@@ -1,0 +1,450 @@
+
+
+
+
+@font-face {
+    font-family: thebold;
+    src: url(../fonts/theboldfont.ttf);
+  }
+  @font-face {
+    font-family: billy;
+    src: url(../fonts/BillyOhio.ttf);
+  }
+  @font-face {
+    font-family: mabebas;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+  }
+  @font-face {
+    font-family: break;
+    src: url(../fonts/Break.ttf);
+  }
+
+  *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+/* Carousel */
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+  }
+  
+  .hero-slider {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  .hero-slider .carousel-cell {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-slider .carousel-cell .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+  }
+  .hero-slider .carousel-cell .inner .subtitle {
+    font-family: "Roboto Slab", serif;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+  }
+  .hero-slider .carousel-cell .inner .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+  .hero-slider .carousel-cell .inner .btn {
+    border: 1px solid #fff;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .hero-slider .carousel-cell .inner .btn:hover {
+    background: #fff;
+    color: #000;
+  }
+  .hero-slider .flickity-prev-next-button {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+  }
+  .hero-slider .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  .hero-slider .flickity-prev-next-button .arrow {
+    fill: white;
+  }
+  .hero-slider .flickity-page-dots {
+    bottom: 30px;
+  }
+  .hero-slider .flickity-page-dots .dot {
+    width: 30px;
+    height: 4px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border: 0 solid white;
+    border-radius: 0;
+  }
+  .hero-slider .flickity-page-dots .dot.is-selected {
+    background:#5c98f6;
+    border: 0 solid #5c98f6;
+  }
+  .dask{
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  /* Sidebar */
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.navbar-fixed-top.scrolled {
+  background-color: #000000 !important;
+  color: black;
+  transition: background-color 200ms linear;
+ opacity: 0.5;
+	
+}
+.navbar-nav.scrolled{
+	
+opacity: 1;
+
+	
+}
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .a2sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bachi{
+    overflow: hidden;
+    z-index: -1;
+
+  }
+
+  .bluetext{
+    font-family: thebold;
+    color :#5c98f6;
+    font-size: 50px;
+  }
+  .blacktext{
+    font-family: thebold;
+    color :rgb(0, 0, 0);
+    font-size: 60px;
+    margin-top: -40px;
+  }
+  .blacktext2{
+    font-family: thebold;
+    color :rgb(0, 0, 0);
+    font-size: 40px;
+    margin-top: -40px;
+  }
+
+  .mainheadtext{
+    font-family: mabebas;
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    .blacktext {font-size: 50px;}
+  }
+
+  .art1div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image{
+    height: 500px;
+    width: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .image{
+      height: 350px;
+      width: auto;
+    }
+  }
+
+  .talwaar{
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+  }
+
+
+  /* Cards */
+
+  .mainpic {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    background: url("../images/cards/fivrr.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+  }
+  
+  .overlayback {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    background: #5c98f6;
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.5s;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .head {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+  .head hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px #fef5df;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: all 0.5s;
+  }
+  
+  .price {
+    font-size: 22px;
+    line-height: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+
+  .more {
+    font-size: 12px;
+    opacity: 0;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+  .more i {
+    font-size: 16px;
+  }
+  .more span {
+    margin-left: 10px;
+  }
+  
+  .mainpic:hover .overlayback {
+    opacity: 1;
+  }
+  .mainpic:hover .overlayback .head {
+    transform: translateY(0px);
+  }
+  .mainpic:hover .overlayback hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+  .mainpic:hover .overlayback .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  .mainpic:hover .overlayback .more {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
+
+  .meraform[type=text]{
+    border: 2px solid #838383;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 60%;
+    padding: 5px;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: lightslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .meraform[type=text]:focus {
+    border: 3px solid #5c98f6;
+  }
+
+    textarea{
+      border: 2px solid #838383;
+      border-radius: 20px;
+      width: 60%;
+      padding: 5px;
+      outline: none;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      color: lightslategrey;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: -50px;
+      resize: none;
+    }
+    textarea:focus {
+      border: 3px solid #5c98f6;
+    }
+    textarea {
+      resize: none;
+    }
+
+    .twiteee{
+      height: 5000px;
+    }
+
+    .btnwrapper{
+      margin-top: 10px;
+      margin-left: 170px;
+    }
+
+    li{
+      list-style: none;
+    }
+    
+    .badmash{
+      color: black;
+    }
+
+    .badmash:link{
+      text-decoration: none;
+    }
+
+    .footerbabu{
+      background-color: #5c98f6;
+    }
+
+
+    .footerservey{
+      background-color: #a3c5fc;
+    }
+
+    /* .mainholder{
+      padding: 140px 0px;
+      background-image: url(../images/main\ banner\ offer.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      text-align: center;
+    } */
+    .holdertext{
+      font-family: thebold;
+    }
+
+    .parallax-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 140px 0px;
+      background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) , url("../images/main\ banner\ offer.png");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      /* background-repeat: no-repeat; */
+    }
+
+    .meryicon{
+      font-size: 20px;
+    }
+
+    .icon-wrapper{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+a:link{
+	text-decoration: none;
+	color: black;
+	
+}
+.nav-link{
+	color:#ED0307; 
+	
+	
+}
